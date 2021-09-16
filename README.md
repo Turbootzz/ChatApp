@@ -16,12 +16,12 @@ create file server.js
 type in server.js :
 
 // Import socket.io and runs the server on the port 3000
-const io = require ("socket.io")(3000)
+    const io = require ("socket.io")(3000)
 
 // Gives everyone that connects their own socket
-io.on("connection", socket => {
-    console.log("new User")
-    //socket.emit("emit-message", "Test test") // Everytime someone joins gets this message
+    io.on("connection", socket => {
+        console.log("new User")
+        //socket.emit("emit-message", "Test test") // Everytime someone joins gets this message
 })
 
 
@@ -30,17 +30,17 @@ Create script.js for the client side of the server
 type this in script.js:
 
 // Location where the server is hosted.
-const socket = io("http://localhost:3000")
+    const socket = io("http://localhost:3000")
 
-socket.on("chat-message", data => {
-    console.log(data) // This is going to be the message Test test I wrote.
+    socket.on("chat-message", data => {
+      console.log(data) // This is going to be the message Test test I wrote.
 })
 
 create index.html and type this in the head:
 
   <!-- where the socket.io is working -->
-  <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
-  <script defer src="script.js"></script>
+    <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
 
  To add dark and light mode:
 
