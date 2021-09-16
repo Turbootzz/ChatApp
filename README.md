@@ -12,10 +12,10 @@
 Download notejs
 
 Open folder in vsc
-Type in terminal
-    npm init
-    npm i socket.io
-(optional)    npm i --save-dev nodemon
+Type in terminal:
+    - npm init
+    - npm i socket.io
+(optional) - npm i --save-dev nodemon
 
 Create file server.js
 
