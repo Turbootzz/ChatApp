@@ -9,17 +9,17 @@
 
 # Explanation method 1
 
-download notejs
+Download notejs
 
-open folder in vsc
-type in terminal
-npm init
-npm i socket.io
-(optional) npm i --save-dev nodemon
+Open folder in vsc
+Type in terminal
+    npm init
+    npm i socket.io
+(optional)    npm i --save-dev nodemon
 
-create file server.js
+Create file server.js
 
-type in server.js :
+Type in server.js :
 
     // Import socket.io and runs the server on the port 3000
       const io = require ("socket.io")(3000)
@@ -33,7 +33,7 @@ type in server.js :
 
 Create script.js for the client side of the server
 
-type this in script.js:
+Type this in script.js:
 
     // Location where the server is hosted.
     const socket = io("http://localhost:3000")
@@ -42,7 +42,7 @@ type this in script.js:
       console.log(data) // This is going to be the message Test test I wrote.
     })
 
-create index.html and type this in the head:
+Create index.html and type this in the head:
 
   <!-- where the socket.io is working -->
     <script defer src="http://localhost:3000/socket.io/socket.io.js"></script>
