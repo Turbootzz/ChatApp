@@ -24,6 +24,13 @@ io.on('connection', (socket) => {
     });
   });
 
+  // Gives everyone that connects their own socket
+io.on("connection", socket => {
+    console.log("New User Has Joined")
+    
+    //socket.emit("emit-message", "Test test") // Everytime someone joins gets this message
+})
+
 server.listen(3000, () => {
   console.log('listening on *:3000');
 });

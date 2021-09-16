@@ -1,5 +1,16 @@
 /* Dark mode and light mode */
 
+@media (color-index: 48) {
+    :root {
+      --site-bgcolor: #1b1b1b;
+      --site-color: #fff;
+    }
+
+    #messages > li:nth-child(odd) {
+        background: #444444;
+      }
+  }
+
 @media (prefers-color-scheme: dark) {
     :root {
       --site-bgcolor: #1b1b1b;
@@ -59,6 +70,7 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    color: gray;
   }
   #messages > li {
     padding: 0.5rem 1rem;
