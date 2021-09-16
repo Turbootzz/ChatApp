@@ -1,6 +1,12 @@
 # ChatApp
  This is my first experience with NodeJS and Socket.io
 
+# Features
+
+  - Chat anonymously to everyone thats connected to the page.
+  - See when someone joins the page.
+  - Goes into dark mode or light mode depending on the OS settings.
+
 # Explanation method 1
 
 download notejs
