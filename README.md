@@ -21,10 +21,10 @@ create file server.js
 
 type in server.js :
 
-// Import socket.io and runs the server on the port 3000
-    const io = require ("socket.io")(3000)
+    // Import socket.io and runs the server on the port 3000
+      const io = require ("socket.io")(3000)
 
-// Gives everyone that connects their own socket
+    // Gives everyone that connects their own socket
     io.on("connection", socket => {
         console.log("new User")
         //socket.emit("emit-message", "Test test") // Everytime someone joins gets this message
@@ -35,7 +35,7 @@ Create script.js for the client side of the server
 
 type this in script.js:
 
-// Location where the server is hosted.
+    // Location where the server is hosted.
     const socket = io("http://localhost:3000")
 
     socket.on("chat-message", data => {
