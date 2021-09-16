@@ -22,7 +22,7 @@ type in server.js :
     io.on("connection", socket => {
         console.log("new User")
         //socket.emit("emit-message", "Test test") // Everytime someone joins gets this message
-})
+    })
 
 
 Create script.js for the client side of the server
@@ -34,7 +34,7 @@ type this in script.js:
 
     socket.on("chat-message", data => {
       console.log(data) // This is going to be the message Test test I wrote.
-})
+    })
 
 create index.html and type this in the head:
 
